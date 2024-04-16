@@ -1,0 +1,13 @@
+<view>
+  <view wx:if="{{checkInList.length > 0}}"> 
+    <view class="recordListItem" wx:for="{{checkInList}}">
+      签到时间: {{item.checkInTime}}
+    </view>
+  </view>
+  <view wx:else>
+    <van-empty description="暂时还没有签到记录哦！" />
+
+
+
+</view>
+</view>

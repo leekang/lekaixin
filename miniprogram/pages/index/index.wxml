@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="main">
+    <view class="checkInfo">
+      <view class="avatar">
+       
+        <view class="checkInRecord">
+          <view class="checkInInfo">累计签到：  <view class="checkNumber">{{checkInCount}}</view>次
+          </view>
+          <view bind:tap="gotoRecordList" class="checkinRecord">
+            签到记录        
+            <image class="arrowIcon" src="../../images/arrow.svg" />
+          </view>
+        </view>
+      </view>
+      <view class="text">还需连续签到0天后，可选择礼品</view>
+    </view>
+    <view class="checkText" bind:tap="checkin">立即签到</view>
+  </view>
+</view>
