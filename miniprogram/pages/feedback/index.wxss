@@ -1,0 +1,22 @@
+.btnWrap{
+  margin-top: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bottom_tips textarea{
+    height: 100px!important;
+}
+.textArea{
+  height: 100px;
+}
+.button{
+  background-color: rgb(88, 189, 106);
+  padding:20rpx 40rpx;
+  width: 80vw;
+  display: flex;
+  border-radius: 20rpx;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}

@@ -1,0 +1,8 @@
+<view class="blockcontainer">
+  <view class="titleWrap">
+    <view class="seperate"> </view>
+    <view class="text">{{title}}</view>
+    </view>
+    <view class="content">{{content}}</view>
+
+</view>

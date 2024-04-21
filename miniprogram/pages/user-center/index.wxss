@@ -3,7 +3,6 @@
   height: 100vh;
   font-family: PingFang SC;
 }
-
 .top_bg {
   height: 120rpx;
 }
@@ -36,6 +35,7 @@
 
 .username {
   color: #333;
+  margin-left: 80rpx;
   font-size: 32rpx;
   margin-top: 20rpx;
   color: rgba(0, 0, 0, 0.9);
@@ -43,8 +43,9 @@
 }
 
 .settings_container {
+
   position: relative;
-  top: 150rpx;
+  top: 180rpx;
   padding: 0 40rpx;
   display: flex;
   flex-direction: column;
@@ -91,6 +92,8 @@
 
 .setting_text {
   color: rgba(0, 0, 0, 0.9);
+  width: auto;
+  height: auto;
 }
 
 .arrow_icon {

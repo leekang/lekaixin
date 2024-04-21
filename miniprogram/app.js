@@ -1,6 +1,11 @@
 // app.js
 App({
   onLaunch: function () {
+    this.globalData = {
+      user_openid: '',
+      userInfo: null
+    };
+    const _that = this;
     if (!wx.cloud) {
       console.error('请使用 2.2.3 或以上的基础库以使用云能力');
     } else {
@@ -11,14 +16,11 @@ App({
       wx.cloud.callFunction({
         name: 'getOpenId',
         success: res =>{
-          this.globalData.user_openid = res.result.openid;
+          console.log(res,'========')
+          console.log(res.result.openid)
+          _that.globalData.user_openid = res.result.openid;
         },
       })
     }
-
-    this.globalData = {
-      user_openid: '',
-      userInfo: null
-    };
   }
 });

@@ -1,7 +1,9 @@
 {
   "dependencies": {
     "@vant/weapp": "^1.11.5",
-    "dayjs": "^1.11.10"
+    "dayjs": "^1.11.10",
+    "weapp-qrcode": "^1.0.0",
+    "wx-qr": "^0.1.2"
   },
   "name": "miniprogram-2",
   "description": "这是云开发的快速启动指引，其中演示了如何上手使用云开发的三大基础能力：",

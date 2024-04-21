@@ -1,0 +1,13 @@
+<view data-weui-theme="{{theme}}">
+  <button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+    <image class="avatar" src="{{avatarUrl}}"></image>
+  </button> 
+  <van-field
+    type="nickname"
+    label="昵称"
+    placeholder="请输入昵称"
+    input-align="left"
+    extra-event-params="true"
+    bind:change="onInputChange"
+  />
+</view>

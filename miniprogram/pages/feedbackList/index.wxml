@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="listwrap" wx:if="{{feedbackList.length > 0}}"> 
+    <view wx:key="index" class="recordListItem" wx:for="{{feedbackList}}">
+      <view>{{item.info}}</view>
+      <view class="recordTime">{{item.createTime}}</view>
+    </view>
+  </view>
+  <view wx:else>
+    <van-empty description="暂时还没有反馈记录哦！" />
+</view>
+</view>

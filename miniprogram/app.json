@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/goods-list/index",
+    "pages/feedback/index",
+    "pages/feedbackList/index",
     "pages/examples/index",
     "pages/user-center/index",
     "pages/exampleDetail/index",
@@ -12,7 +13,8 @@
     "pages/sumRecord/index",
     "pages/sumRecordResult/index",
     "pages/web/index",
-    "pages/recordList/index"
+    "pages/recordList/index",
+    "pages/userInfo/index"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -35,6 +37,12 @@
         "selectedIconPath": "images/icons/home-active.png"
       },
       {
+        "pagePath": "pages/feedback/index",
+        "text": "用餐反馈",
+        "iconPath": "images/icons/feedback.png",
+        "selectedIconPath": "images/icons/home-active.png"
+      },
+      {
         "pagePath": "pages/user-center/index",
         "text": "我的",
         "iconPath": "images/icons/usercenter.png",
@@ -44,7 +52,14 @@
   },
   "usingComponents": {
     "van-button": "@vant/weapp/button/index",
-    "van-empty": "@vant/weapp/empty/index"
+    "van-empty": "@vant/weapp/empty/index",
+    "van-calendar": "@vant/weapp/calendar/index",
+    "van-field": "@vant/weapp/field/index",
+    "van-dialog": "@vant/weapp/dialog/index",
+    "van-toast": "@vant/weapp/toast/index",
+    "qr-container": "wx-qr",
+    "van-popup": "@vant/weapp/popup/index",
+    "van-overlay": "@vant/weapp/overlay/index"
 
   }
 }

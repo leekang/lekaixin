@@ -1,20 +1,36 @@
 <!--index.wxml-->
 <view class="container">
   <view class="main">
-    <view class="checkInfo">
-      <view class="avatar">
-       
-        <view class="checkInRecord">
-          <view class="checkInInfo">累计签到：  <view class="checkNumber">{{checkInCount}}</view>次
-          </view>
-          <view bind:tap="gotoRecordList" class="checkinRecord">
-            签到记录        
-            <image class="arrowIcon" src="../../images/arrow.svg" />
-          </view>
-        </view>
+    <vew class="checkText">每日签到+10积分</vew>
+    <view class="flexcenter">
+      <view class="calendarWrap">
+        <calendar
+        id="calendar"
+        bind:afterCalendarRender="afterCalendarRender"
+
+        config="{{calendarConfig}}"
+        ></calendar>
       </view>
-      <view class="text">还需连续签到0天后，可选择礼品</view>
     </view>
-    <view class="checkText" bind:tap="checkin">立即签到</view>
+    <view class="btnWrap">
+      <view wx:if="{{todayHasCheck === 3}}" class="button" bind:tap="showPopup"
+      >今日签到</view>
+      <view wx:elif="{{todayHasCheck === 2}}" class="buttonChecked" bind:tap="checkinTomorrow"
+      >今日已签到</view>
+    </view>
+    <view class="flexcenter">
+      <blockView content="已连续签到{{checkInCount}}天。" title="签到赢奖励"></blockView>
+    </view>
+    <view class="flexcenter">
+     <blockView title="活动规则"></blockView>
+    </view>
+    <van-overlay show="{{ show }}" bind:click="onClickHide" >
+      <view class="canvasWrap">
+        <canvas style="width: 200px; height: 200px;" canvas-id="myQrcode"></canvas>
+      </view>
+    </van-overlay>
+    <van-toast id="van-toast" />
+
+
   </view>
 </view>

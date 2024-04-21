@@ -1,0 +1,30 @@
+.blockcontainer{
+  width: 90vw;
+  height: auto;
+  border-radius: 14rpx;
+  margin-top: 14rpx;
+  background: rgb(226,227,235);
+  padding: 20rpx 20rpx;
+  box-sizing: border-box;
+}
+.text{
+  font-size: 12px;
+  color: rgba(0,0,0,0.5);
+  margin-left: 12rpx;
+}
+.content{
+  font-size: 12px;
+  color: rgba(198,176,139,0.9);
+  margin-left: 12rpx;
+  margin-top: 12rpx;
+}
+.titleWrap{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.seperate{
+  width: 2px;
+  height: 14px;
+  background-color: rgb(196,172,133);
+}

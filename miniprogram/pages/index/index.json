@@ -1,6 +1,8 @@
 {
   "usingComponents": {
-    "cloud-tip-modal": "/components/cloudTipModal/index"
+    "cloud-tip-modal": "/components/cloudTipModal/index",
+    "calendar": "/components/v2/index",
+    "blockView": "/components/blockView/index"
   },
   "navigationBarBackgroundColor": "#fff"
 }
